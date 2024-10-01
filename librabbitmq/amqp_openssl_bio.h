@@ -5,7 +5,7 @@
 #define AMQP_OPENSSL_BIO
 
 // Use OpenSSL v1.1.1 API.
-#define OPENSSL_API_COMPAT 30300
+#define OPENSSL_API_COMPAT 30200
 
 #include <openssl/bio.h>
 

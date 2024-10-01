@@ -10,7 +10,7 @@
 #endif
 
 // Use OpenSSL v1.1.1 API.
-#define OPENSSL_API_COMPAT 30300
+#define OPENSSL_API_COMPAT 30200
 
 #include "amqp_openssl_bio.h"
 #include "amqp_private.h"
