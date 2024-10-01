@@ -115,7 +115,7 @@ option(ENABLE_SSL_SUPPORT "Enable SSL support" ON)
 
 if (ENABLE_SSL_SUPPORT)
   # Manually check OpenSSL version because BoringSSL doesn't support version checking via find_package
-  set(RMQ_OPENSSL_MIN_VERSION 1.1.1)
+  set(RMQ_OPENSSL_MIN_VERSION 3.0.0)
   find_package(OpenSSL REQUIRED)
   if(OPENSSL_VERSION) # Will be empty for BoringSSL
     if(OPENSSL_VERSION VERSION_LESS RMQ_OPENSSL_MIN_VERSION)
